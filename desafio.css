@@ -1,0 +1,53 @@
+
+
+header{
+    background-color: #0091aa;
+	color: #fff;
+	padding: 15px;
+	text-align: center;
+
+}
+.texts{
+	text-align: center;
+    border: 4px solid #0091aa;
+	border-radius: 20px;
+	width: 700px;
+	position: absolute;
+	left: 32%;
+	margin-top: 40px;
+}
+
+.formul{
+	text-align: center;
+	margin-top: 250px;
+}
+
+input{
+  border: 1px solid #0091aa;
+  border-radius: 20px;
+  background-color: #fff;
+  height: 30px;
+  width: 390px;
+  text-align: center;
+}
+
+.calc{
+  background-color: #71a0a8;
+  border-radius: 15px;
+  width: 180px;
+}
+
+body{
+	background-color: #9ed5df;
+    text-align: center;
+}
+
+
+.result{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 47%;
+
+}
