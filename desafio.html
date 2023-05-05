@@ -1,0 +1,58 @@
+<title>Calcular idade</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="desafio.css">
+<script>
+function verificarFaseVida() {
+
+var nome = document.getElementById("nome").value;
+var idade = parseInt(document.getElementById("idade").value);
+
+
+if (idade <= 11) {
+var fase = "Criança";
+} else if (idade >= 12 && idade <= 20) {
+var fase = "Adolescente";
+} else if (idade >= 21 && idade <= 65) {
+var fase = "Adulto(a)";
+} else {
+var fase = "Idoso(a)";
+}
+
+
+document.getElementById("resultado").innerHTML = nome + ", você é um(a) " + fase;
+}
+</script>
+</head>
+
+<header>
+<h1>Qual fase da vida você está</h1>
+</header>
+
+<body>
+  <div class="texts">
+    <h3 id="descExercício">
+      Criança - Até 11 anos de idade<br>
+    <br>
+    Adolescente - Dos 12 até os 20 anos de idade<br>
+    <br>
+    Adulto - Dos 21 até os 65 anos de idade<br>
+    <br>
+    Idoso - Acima de 65 anos de idade<br>
+  </h3>
+ </div>
+ <br>
+ <br>
+<div class="formul">
+<input type="text" id="nome" placeholder="Qual seu nome?"><br>
+<br>
+<input type="number" id="idade" placeholder="Qual sua idade?"><br>
+<br>
+<br>
+
+<button class="calc" onclick="verificarFaseVida()">Verificar</button>
+</div>
+<br>
+<br>
+<div id="resultado"></div>
+</body>
+</html>
